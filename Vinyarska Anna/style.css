@@ -1,0 +1,87 @@
+body {
+    background-color: antiquewhite;
+}
+#ytext {
+    color: yellow;
+}
+.divcls {
+    color: darkgreen;
+    font-size: 20px;
+    font-style:unset;
+}
+table {
+    margin-left: 45%;
+    border: 30px solid green;
+}
+@keyframes hover {
+    from {width: 300px;}
+    to {width: 500px;}
+} 
+.imgHover {
+    border-radius: 50%;
+    filter: grayscale(100%);
+    width: 300px;
+  }
+  .imgHover:active {
+    border-radius: 0%;
+    filter: grayscale(0%) sepia(50%);
+    animation: hover 1s;
+    width: 500px;
+  }
+.active:active {
+    color: rgb(0, 0, 0);
+}
+.link:link {
+    color: aqua;
+}
+
+.visited:visited {
+    color: chartreuse;
+}
+.hoverActive::first-letter {
+    color: blue;
+    font-size: 50px;
+}
+.hoverActive::before {
+    content: "glghjdhegbfh";
+} 
+p:hover::selection {
+    color: yellowgreen;
+    background-color: aquamarine;
+}
+.qwerty:hover{
+    visibility: hidden;
+}
+.vis {
+    visibility: visible;
+}
+.notvis {
+    visibility: hidden;
+}
+.halfvis {
+    opacity: 0.4;
+}
+p{ 
+    background-color: yellow;
+}
+.block {
+    display:block;
+}
+.none{
+    display:none;
+}
+.inline {
+    display:inline;
+}
+.image {
+
+    margin-top: 5px;
+    margin-left: 100px;
+}
+@keyframes backanima {
+    from {background-color: cornflowerblue; width:}
+    to {background-color: aquamarine;}
+}
+th {
+    animation-duration: backanima 5s infinite;
+}

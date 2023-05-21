@@ -1,0 +1,30 @@
+
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.list {
+    background-color: aqua;
+}
+.list-second {
+    background-color: blueviolet;
+
+}
+button {
+    background-color: hotpink;
+}
+.buttons {
+    margin-bottom: 20px;
+}
+.text {
+    color: aliceblue;
+    background-color: chocolate;
+}
+img {
+    width: 200px;
+}
+.top{
+    margin-top: 3.5%;
+}

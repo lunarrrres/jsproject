@@ -1,0 +1,130 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    display: inline-block;
+}
+.image {
+    display: block;
+    width: 500px;
+    height: 600px;
+    border: solid black 3px;
+    border-radius: 3px;
+    margin: 0 auto;
+    background-image: url(./girl.webp) ;
+}
+.imageCol {
+    padding-right: 50px;
+    border-right: solid black 3px;
+    transform: translateY(100px);
+    margin-bottom: 50px;
+}
+.textCol {
+    text-align: center;
+}
+.name {
+    font-size: 20px;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+.buttons {
+    margin-bottom: 5rem;
+}
+.textBio {
+    margin-bottom: 4rem;
+}
+@keyframes buttons-animation {
+    from {
+        transform: scale(100%);
+    }
+    to {
+        transform: scale(120%);
+    }
+}
+.btnPortfolio {
+    display: inline-block;
+    border: solid black 3px;
+    border-radius: 3px;
+    padding: 7px 15px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 100px;
+}
+.btnPortfolio:hover{
+    background-color: black;
+    color: white;
+    animation: 0.5s buttons-animation;
+    transform: scale(120%)
+}
+.btnMe {
+    display: inline-block;
+    border: solid black 3px;
+    border-radius: 3px;
+    padding: 7px 15px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+.btnMe:hover{
+    background-color: black;
+    color: white;
+    animation: 0.5s buttons-animation;
+    transform: scale(120%)
+}
+@keyframes icons-animation {
+    from {
+        
+    }
+    to {
+        transform: translateY(-10px);
+        transform: rotate(100%);
+    }
+}
+.btnInsta {
+    background-color: black;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 15px;
+}
+.btnInsta:hover {
+    animation: 0.25s icons-animation;
+}
+.btnFacebook {
+    background-color: black;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 15px;
+}
+.btnFacebook:hover {
+    animation: 0.25s icons-animation;
+}
+.btnLinkedin {
+    background-color: black;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 15px;
+}
+.btnLinkedin:hover {
+    animation: 0.25s icons-animation;
+}
+@media screen and (max-width: 1200px) {
+    .imageCol {
+      border: none;
+    }
+    .icons {
+        padding-bottom: 50px;
+    }
+  }
+@media screen and (max-width: 385px) {
+    .btnPortfolio, .btnMe {
+        min-width: 200px;
+        width: 100%;
+    }
+    .btnPortfolio {
+        margin-bottom: 1.5rem;
+    }
+    .buttons {
+        margin-bottom: 3rem;
+    }
+}
